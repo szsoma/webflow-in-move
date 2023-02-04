@@ -3,10 +3,12 @@ import { gsap } from 'gsap'
 import { Flip } from 'gsap/Flip'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+import animateTitle from './features/title-anim'
+
 gsap.registerPlugin(Flip, ScrollTrigger)
 
 console.log('Soma! It"s working')
-
+animateTitle()
 /*!
  *Hey Mr. Reverse engineer! Thanks for checking
  * FluidBlocks v1.0 - https://fluidgo.gumroad.com

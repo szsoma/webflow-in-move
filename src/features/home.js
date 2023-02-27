@@ -8,9 +8,8 @@
  */
 
 // Site rectangles move down animation
-let rectangleReveal = gsap.utils.toArray('.col4_item')
-
 function rectangleReveal() {
+  let rectangleReveal = gsap.utils.toArray('.col4_item')
   let tl = gsap.timeline({
     scrollTrigger: {
       //trigger element / viewport
@@ -27,8 +26,7 @@ function rectangleReveal() {
   })
 }
 
-// Project #01 -----------------------------
-
+// Project #01
 function project01() {
   let item1 = $('.wim_project-01-rect1.is-1')
   let item2 = $('.wim_project-01-ed')

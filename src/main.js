@@ -1,13 +1,11 @@
 import './styles/style.css'
 import { gsap } from 'gsap'
-import { Flip } from 'gsap/Flip'
+//import { Flip } from 'gsap/Flip'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 // importing my functions
 
 // Home javascript section
-gsap.registerPlugin(Flip, ScrollTrigger)
-
 gsap.registerPlugin(ScrollTrigger)
 
 // Site rectangles move down animation
@@ -31,8 +29,8 @@ function rectangleReveal() {
 
 // Project #01
 function project01() {
-  let item1 = document.find('.wim_project-01-rect1.is-1')
-  let item2 = document.find('.wim_project-01-ed')
+  let item1 = document.getElementsByClassName('wim_project-01-rect1.is-1')
+  let item2 = document.getElementsByClassName('wim_project-01-ed')
   var tl1 = gsap.timeline({
     defaults: {
       duration: 1,

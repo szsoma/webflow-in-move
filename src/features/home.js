@@ -6,6 +6,10 @@
  * No modifications or updates can be requested.
  * Purchasing this code is not in exchange for any support from Soma Szoboszlai in implementing it in your project or in exchange for any other personal service.
  */
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 // Site rectangles move down animation
 function rectangleReveal() {
@@ -28,10 +32,8 @@ function rectangleReveal() {
 
 // Project #01
 function project01() {
-  let item1 = $('.wim_project-01-rect1.is-1')
-  let item2 = $('.wim_project-01-ed')
-  let staggerArray = gsap.utils.toArray('.wim_project01-stagger')
-
+  let item1 = document.find('.wim_project-01-rect1.is-1')
+  let item2 = document.find('.wim_project-01-ed')
   var tl1 = gsap.timeline({
     defaults: {
       duration: 1,
@@ -94,3 +96,5 @@ function project01() {
       delay: -0.8,
     })
 }
+rectangleReveal()
+project01()

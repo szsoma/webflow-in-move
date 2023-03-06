@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "gsap": "^3.9.1",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "split-type": "^0.3.3"
   }
 }
